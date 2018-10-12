@@ -1,0 +1,10 @@
+{% if game %}
+<ul>
+    {% for eachGame in game %}
+    <li>{{ eachGame.title }} is rated {{ eachGame.rating }}</li>
+    <li>{{ eachGame.title }}'s review: {{ eachGame.review }} </li>
+    {% endfor %}
+</ul>
+{% else %}}
+<p>No games available</p>
+{% endif %}
